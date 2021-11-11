@@ -23,3 +23,11 @@
 */
 apply from: "../../definition.gradle"
 knetDefineLib(project, "okcronet")
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets
+}
+
+artifacts {
+    archives sourcesJar
+}
