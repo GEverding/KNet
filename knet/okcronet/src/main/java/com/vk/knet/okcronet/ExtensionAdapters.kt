@@ -64,7 +64,7 @@ interface OkHttpToKnetAdapter {
             )
         }
 
-        val body = if (method.isPost) requestBody.toKnetBody() else null
+        val body = if (method.isPost || method.isPut) requestBody.toKnetBody() else null
         return HttpRequest(method, url, headers, body)
     }
 

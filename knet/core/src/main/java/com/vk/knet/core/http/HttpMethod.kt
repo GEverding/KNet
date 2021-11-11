@@ -41,6 +41,7 @@ enum class HttpMethod(
 
     val isGet: Boolean get() = (this == GET)
     val isPost: Boolean get() = (this == POST)
+    val isPut: Boolean get() = (this == PUT)
 
     companion object {
         /**
