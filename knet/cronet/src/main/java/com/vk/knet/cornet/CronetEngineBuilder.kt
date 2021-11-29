@@ -231,6 +231,7 @@ class CronetEngineBuilder(
             }
             builder.setExperimentalOptions(experimentalOptions.toString())
         }
+        builder.setExperimentalOptions("{\"NetworkErrorLogging\": {\"enable\": true}}")
         return builder.build()
     }
 
