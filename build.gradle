@@ -36,6 +36,7 @@ subprojects { Project subproject ->
             }
             google()
             mavenCentral()
+            maven { url "https://jitpack.io" }
         }
 
         dependencies {
@@ -48,12 +49,14 @@ subprojects { Project subproject ->
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
 allprojects {
     repositories {
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
